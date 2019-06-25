@@ -1,4 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+ /* base */
+* {
+   margin: 0;
+   padding: 0;
+}
+
 body {
+   font-family: 'Roboto', sans-serif;
    background-color: black;
    color: #ffffff;
+   max-width: 2400px;
+   margin: auto;
+}
+
+ul {
+   list-style: none;
+}
+
+.header {
+   background-image: url(../img/group.png);
+   background-repeat: no-repeat;
+   height: 100vh;
+   min-width: 100%;
+
+}
+
+ /* top-line */
+.top-line {
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.top-line__contact {
+   display: flex;
+}
+
+.top-line__email img  {
+   width: 6%;
+   display: inline-block;
+   padding-right: 0.5rem;
+}
+
+.top-line__email {
+   padding-right: 1rem;
+}
+
+.top-line__phone img  {
+   width: 10%;
+   display: inline-block;
+   padding-right: 0.5rem;
+}
+
+.top-line__soc-icon {
+   display: flex;
+}
+
+.top-line__soc-icon li {
+   padding: 0 0.2rem;
+}
+
+.top-line__soc-icon img {
+   width: 50%;
+}
+
+ /* menu */
+
+.menu__container {
+   padding: 1rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.menu__items {
+   display: flex;
+}
+
+.menu__item {
+   padding: 1rem;
+}
+
+ /* logo site */
+
+.logo {
+   display: inline-block;
+   position: relative;
+}
+
+.logo-caption {
+   font-size: 0.8rem;
+   text-align: left;
+   position: relative;
+   top: -13%;
+}
+
+.main-description-container {
+   margin-top: 2rem;
+}
+
+.section-form {
+   background-image: url(../img/contact-cover-img.png);
+   width: 100%;
+   height: 480px;
 }
