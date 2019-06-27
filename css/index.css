@@ -98,7 +98,6 @@ section {
 
  .menu {
    background-color: #11283F;
-   /* position: fixed; */
    top: 0;
 }
 
@@ -117,12 +116,13 @@ section {
 
 .menu__item {
    padding: 1rem;
+   padding-bottom: 1.3rem;
    text-transform: uppercase;
    white-space: nowrap;
 }
 
 .menu__item a:hover {
-   text-decoration: underline;
+   border-bottom: 1px solid var(--accent-color);
    transition: 500ms all;
    color: var(--accent-color);
 }
