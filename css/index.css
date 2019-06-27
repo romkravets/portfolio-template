@@ -1,34 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 
  /* base */
-* {
+
+ :root {
+   --main-color: rgb(0, 0, 0);
+   --accent-color: rgb(255, 204, 1);
+   --link-color: rgb(255, 255, 255);
+   font-family:'Raleway', sans-serif;
+   scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, header,section,footer, p {
    margin: 0;
    padding: 0;
 }
 
-html, body {
-   width: 100%;
-   height: 100%;
-}
 
 body {
    font-family: 'Roboto', sans-serif;
-   background-color: #f7f7f7;
+   background-color: rgb(247, 247, 247);
    color: #363636;
    margin: auto;
    letter-spacing: normal;
+   max-width: 980px;
 }
 
 .section-white-color {
-   color: #ffffff;
+   color: rgb(255, 255, 255);
 }
 
 ul {
    list-style: none;
 }
 
-.header {
+a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+}
+
+.main-header {
    background-image: url(../img/group.png);
+   min-height: 300px;
+   background-position: center;
+   background-size: cover;
 }
 
 section {
@@ -37,9 +51,11 @@ section {
 
  /* top-line */
 .top-line {
-   padding: 1rem;
-   display: flex;
+   padding: 0.1rem 1rem;
+   display: none;
+   font-size: 13px;
    justify-content: space-between;
+   border-bottom: 0.1px solid #ffffff;
 }
 
 .top-line__contact {
@@ -49,7 +65,7 @@ section {
 .top-line__email img  {
    width: 6%;
    display: inline-block;
-   padding-right: 0.5rem;
+   padding-right: 0.3rem;
 }
 
 .top-line__email {
@@ -74,40 +90,157 @@ section {
    width: 50%;
 }
 
+.top-line__soc-icon li a img:hover {
+  color: #000000;
+}
+
  /* menu */
+
+ .menu {
+   background-color: #11283F;
+   /* position: fixed; */
+   top: 0;
+}
 
 .menu__container {
    padding: 1rem;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   align-items: center;
+   flex: 1 1;
 }
 
 .menu__items {
-   display: flex;
+   display: none;
 }
 
 .menu__item {
    padding: 1rem;
+   text-transform: uppercase;
+   white-space: nowrap;
 }
+
+.menu__item a:hover {
+   text-decoration: underline;
+   transition: 500ms all;
+   color: var(--accent-color);
+}
+
+.menu__mobile-controls {
+   justify-content: space-between;
+   align-items: center;
+ }
+
+.burger {
+   display: flex;
+   flex-direction: column;
+   z-index: 3;
+   justify-content: space-around;
+   height: 30px;
+   width: 30px;
+ }
+
+ .menu__raw {
+   display: inline-block;
+   width: 30px;
+   height: 3px;
+   transition: all 500ms;
+   background-color: rgb(255, 255, 255);
+ }
 
  /* logo site */
 
 .logo {
-   display: inline-block;
+   display: flex;
    position: relative;
+   text-align: center;
+
+}
+
+.logo img {
+   width: 80%;
 }
 
 .logo-caption {
-   font-size: 0.8rem;
-   text-align: left;
+   font-size: 10px;
+   text-align: center;
    position: relative;
    top: -13%;
+   color: #ffffff;
+}
+
+@media (min-width: 600px) {
+   .menu {
+      background-color: transparent;
+      text-align: left;
+   }
+   .top-line {
+      display: flex;
+      align-items: center;
+   }
+   .menu__items {
+      display: flex;
+      align-items: center;
+   }
+   .menu__mobile-controls {
+      display: none;
+   }
+   .logo-caption {
+      text-align: left;
+      position: relative;
+      left: 10%;
+   }
+   .logo img {
+      width: 93%;
+  }
+  .btn-container {
+     display: flex;
+     width: 40%;
+     margin: auto;
+     padding-top: 3rem;
+  }
+}
+
+/* button */
+
+.btn {
+   cursor: pointer;
+   outline: none;
+   background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
+   box-shadow: 0 8px 20px -14px #e80505;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	font-size: 18px;
+	line-height: 2.5;
+	padding: 0 1em;
+	font-weight: 400;
+	letter-spacing: 1px;
+	transition: all 150ms;
+	min-width: 144px;
+	display: block;
+   margin: 1em auto;
+}
+
+.btn__viwe {
+   background-color: transparent;
+   color: #ffffff;
+   outline: none;
+   cursor: pointer;
+   font-size: 18px;
+   border: 1px solid #ffffff;
+   border-radius: 3px;
+   min-width: 144px;
+   padding: 0.8rem 1rem;
+   font-weight: 400;
+   margin: 1em auto;
 }
 
 .main-description-container {
    padding: 1rem;
    margin-top: 2rem;
+   text-align: center;
 }
 
 .section-form {
