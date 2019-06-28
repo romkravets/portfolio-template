@@ -15,7 +15,6 @@ h1, h2, h3, h4, h5, h6, header,section,footer, p {
    padding: 0;
 }
 
-
 body {
    font-family: 'Roboto', sans-serif;
    background-color: rgb(247, 247, 247);
@@ -73,7 +72,7 @@ section {
 }
 
 .top-line__phone img  {
-   width: 10%;
+   width: 8%;
    display: inline-block;
    padding-right: 0.5rem;
 }
@@ -119,6 +118,10 @@ section {
    padding-bottom: 1.3rem;
    text-transform: uppercase;
    white-space: nowrap;
+}
+
+.menu__item img {
+   width: 50%
 }
 
 .menu__item a:hover {
@@ -170,7 +173,17 @@ section {
    color: #ffffff;
 }
 
-@media (min-width: 600px) {
+.main-description-container {
+   padding: 1rem;
+   margin-top: 2rem;
+   text-align: center;
+}
+
+.main-description-container__title {
+   font-size: 3rem;
+}
+
+@media (min-width: 705px) {
    .menu {
       background-color: transparent;
       text-align: left;
@@ -200,6 +213,9 @@ section {
      margin: auto;
      padding-top: 3rem;
   }
+  .main-description-container__title {
+   font-size: 5rem;
+   }
 }
 
 /* button */
@@ -236,13 +252,6 @@ section {
    font-weight: 400;
    margin: 1em auto;
 }
-
-.main-description-container {
-   padding: 1rem;
-   margin-top: 2rem;
-   text-align: center;
-}
-
 .section-form {
    background-image: url(../img/contact-cover-img.png);
    width: 100%;
