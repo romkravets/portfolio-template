@@ -28,35 +28,3 @@ topFunction = () => {
 }
 
 topFunction();
-
-
-
-
-
-
-
-
-// function scrollFunction() {
-//    if (document.body.scrollY > 20 || document.documentElement.scrollY > 20) {
-//      document.getElementById('scroll__top').style.display = "block";
-//    } else {
-//      document.getElementById('scroll__top').style.display = "none";
-//    }
-//  }
-
-
-
-// const searchBtn = document.querySelector('#toggleSearch');
-// const searchContainer = document.querySelector('.search-container');
-
-// function search(e) {
-//    // e.preventDefault();
-//    searchBtn.addEventListener('click', () => {
-//       searchContainer.classList.toggle('search-container_opened');
-//       // if(this.scrollY <= 10) searchContainer.className = 'search-container'; else searchContainer.className = 'search-container_opened';
-//    })
-// }
-
-// search();
-
-
