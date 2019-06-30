@@ -13,62 +13,80 @@
       <nav class="top-line">
         <div class="top-line__contact">
           <div class="top-line__email">
-            <a class="menu__link" href="#"
-              ><img src="img/massege.png" alt="Email Roman Kravets" />
-              romann.kravets@gmail.com</a>
+            <a class="menu__link icon__img-hover" href="#">
+              <img
+                class="top-line__img"
+                src="img/massege.png"
+                alt="Email Roman Kravets"
+              />
+              romann.kravets@gmail.com</a
+            >
           </div>
           <div class="top-line__phone">
-            <a class="menu__link" href="#"
-              ><img src="img/phone.png" alt="Phone call Roman Kravets" />
-              +38(069)-927-17-07</a>
+            <a class="menu__link icon__img-hover" href="#"
+              ><img
+                class="top-line__img"
+                src="img/phone.png"
+                alt="Phone call Roman Kravets"
+              />
+              +38(069)-927-17-07</a
+            >
           </div>
         </div>
         <ul class="top-line__soc-icon">
           <li>
-            <a href="">
+            <a class="icon__img-hover" href="#">
               <img src="img/social_icon/facebook-letter-logo.png" alt="Facebook"
             /></a>
           </li>
           <li>
-            <a href="">
+            <a class="icon__img-hover" href="#">
               <img src="img/social_icon//linkedin.png" alt="Linkedin"
             /></a>
           </li>
           <li>
-            <a href=""> <img src="img/social_icon/github.png" alt="Github"/></a>
+            <a class="icon__img-hover" href="#">
+              <img src="img/social_icon/github.png" alt="Github"
+            /></a>
           </li>
           <li>
-            <a href="">
+            <a class="icon__img-hover" href="#">
               <img src="img/social_icon/codepen.png" alt="Codepen"
             /></a>
           </li>
           <li>
-            <a href="">
+            <a class="icon__img-hover" href="#">
               <img src="img/social_icon/google-plus.png" alt="Google Plus"
             /></a>
           </li>
         </ul>
       </nav>
-      <nav class="menu">
+      <nav class="menu" id="navMenu">
         <div class="menu__container">
           <div class="logo">
-            <a href="#">
+            <a class="menu__link" href="#">
               <img src="img/logo.png" alt="Coder Roman Kravets" />
               <div class="logo-caption">Portfolio<br />Roman Kravets</div>
             </a>
           </div>
-          <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-          <label for="openSidebarMenu" class="burger">
+          <input type="checkbox" class="openMenu" id="openMenu" />
+          <label for="openMenu" class="burger">
             <span class="spinner"></span>
             <span class="spinner"></span>
             <span class="spinner"></span>
           </label>
           <ul class="menu__items">
             <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Services</a>
+            </li>
             <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Projects</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Contact Me</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Projects</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact Me</a>
+            </li>
             <li class="menu__item menu__item__mobile-search">
               <a href="#"
                 ><img
@@ -96,44 +114,61 @@
           <button class="btn btn-contact">Contact Me</button>
           <button class="btn__view">View Projects</button>
         </div>
-        <div class="btn-next">
-          <a href="#"
-            ><img src="img/down-arrow.png" alt="show more in site web developer"
-          /></a>
+        <div class="btn__next">
+          <a href="#sectionAdantages">
+            <img
+              src="img/down-arrow.png"
+              alt="show more in site web developer"
+            />
+          </a>
         </div>
       </div>
     </header>
-    <!-- <section class="section">
-                          <div class="section-description">
-                              <p class="section__pre-title">Lorem, ipsum dolor.</p>
-                              <h2 class="section__title">Lorem ipsum dolor sit.</h2>
-                              <p class="section__sub-title">Webster's ultimate easy to use and customizable UI elements make it most customizable template on the market.</p>
-                          </div>
-                          <div class="section-advantages">
-                              <div>
-                                  <a href="#">
-                                      <img src="img/artistic-brush-black.png" alt="Unique & Clean">
-                                      <h3>Lorem & ipsum.</h3>
-                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium magnam quisquam veniam praesentium deserunt hic quia, exercitationem nihil totam.</p>
-                                 </a>
-                              </div>
-                              <div>
-                                  <a href="#">
-                                      <img src="img/move-black.png" alt="Flexible Layouts">
-                                      <h3>Lorem & ipsum.</h3>
-                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, rem voluptatum? Necessitatibus aliquid in nesciunt, nam voluptas impedit!</p>
-                                  </a>
-                              </div>
-                              <div>
-                                  <a href="#">
-                                      <img src="img/heart-black.png" alt="Trendy Design">
-                                      <h3>Lorem & ipsum.</h3>
-                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut autem consequatur quo quos delectus eum!</p>
-                                  </a>
-                              </div>
-                          </div>
-                      </section>
-                      <section class="section-feature">
+    <section class="section">
+      <div class="section-description">
+        <p class="section__pre-title">Lorem, ipsum dolor.</p>
+        <h2 class="section__title">Lorem ipsum dolor sit.</h2>
+        <p class="section__sub-title">
+          Webster's ultimate easy to use and customizable UI elements make it
+          most customizable template on the market.
+        </p>
+      </div>
+      <div class="section-advantages" id="sectionAdantages">
+        <div>
+          <a href="#">
+            <img src="img/artistic-brush-black.png" alt="Unique & Clean" />
+            <h3>Lorem & ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              accusantium magnam quisquam veniam praesentium deserunt hic quia,
+              exercitationem nihil totam.
+            </p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="img/move-black.png" alt="Flexible Layouts" />
+            <h3>Lorem & ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+              rem voluptatum? Necessitatibus aliquid in nesciunt, nam voluptas
+              impedit!
+            </p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="img/heart-black.png" alt="Trendy Design" />
+            <h3>Lorem & ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              aut autem consequatur quo quos delectus eum!
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="section-feature">
                           <div class="section-feature__container">
                               <div>
                                   <img src="img/feauture-img-main.png" alt="feature">
@@ -277,6 +312,7 @@
                       </div>
                       </footer>
                       <div class="top" title="To top"></div> -->
+    -->
     <script src="js/index.js"></script>
   </body>
 </html>

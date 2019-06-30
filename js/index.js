@@ -1,6 +1,11 @@
 const burger = document.querySelector('.burger');
-const nav = document.querySelector('.menu__items');
+const navItems = document.querySelector('.menu__items');
 
 burger.addEventListener('click', () => {
-   nav.classList.toggle('menu__items_opened');
+   navItems.classList.toggle('menu__items_opened');
 });
+
+window.onscroll = () => {
+   const navMenu = document.querySelector('#navMenu');
+   if(this.scrollY <= 10) navMenu.className = ''; else navMenu.className = 'menu_scroll';
+ };
