@@ -7,5 +7,5 @@ burger.addEventListener('click', () => {
 
 window.onscroll = () => {
    const navMenu = document.querySelector('#navMenu');
-   if(this.scrollY <= 10) navMenu.className = ''; else navMenu.className = 'menu_scroll';
+   if(this.scrollY <= 10) navMenu.className = 'menu'; else navMenu.className = 'menu_scroll';
  };

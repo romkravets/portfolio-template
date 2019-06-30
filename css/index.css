@@ -158,36 +158,43 @@ body {
     font-size: 3rem;
 }
 
+.menu_scroll {
+    width: 100%;
+    display: flex;
+    max-width: 2400px;
+    transition: all 0.5s;
+    top: 0;
+    height: 60px;
+    position: fixed;
+    opacity: 0.9;
+    background-color: var(--mobile-menu-color);
+}
+.menu_scroll .menu__container {
+    padding: 0 1rem;
+    transition: all 0.5s;
+}
+.menu_scroll .menu__container .logo img {
+    width: 60%;
+    transition: all 0.5s;
+}
+
+.menu_scroll .menu__container .menu__item {
+    transition: all 0.5s;
+}
+
+.menu_scroll .menu__items_opened {
+    top: 44px;
+}
+
+
+
+
 @media (min-width: 760px) {
     .menu {
         max-width: 2400px;
         background-color: transparent;
         text-align: left;
     }
-    .menu_scroll {
-        width: 100%;
-        display: flex;
-        max-width: 2400px;
-        transition: all 0.5s;
-        top: 0;
-        height: 60px;
-        position: fixed;
-        opacity: 0.9;
-        background-color: var(--mobile-menu-color);
-    }
-    .menu_scroll .menu__container {
-        padding: 0 1rem;
-        transition: all 0.5s;
-    }
-    .menu_scroll .menu__container .logo img {
-        width: 60%;
-        transition: all 0.5s;
-    }
-
-    .menu_scroll .menu__container .menu__item {
-        transition: all 0.5s;
-    }
-
     .top-line {
         display: flex;
         align-items: center;
@@ -291,9 +298,9 @@ input[type=checkbox]:checked ~
         transform-origin: top center;
         border-top: 0.5px solid var( --white-color);
         border-bottom: 0.5px solid var( --white-color);
-        transition: all 500ms;
-        background-color: #11283F;
-        opacity: 0.9;
+        transition: all 0.5s;
+        background-color: rgb(17, 40, 63);
+        opacity: .7;
         height: auto;
         padding: 3rem 3rem;
         top: 90px;
