@@ -1,4 +1,4 @@
-const burger = document.querySelector('.sidebarIconToggle');
+const burger = document.querySelector('.burger');
 const nav = document.querySelector('.menu__items');
 
 burger.addEventListener('click', () => {
