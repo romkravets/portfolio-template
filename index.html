@@ -8,7 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/index.css" type="text/css" />
   </head>
-  <body>
+  <body class="page__body">
     <header class="main-header">
       <nav class="top-line">
         <div class="top-line__contact">
@@ -78,14 +78,14 @@
           <ul class="menu__items">
             <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Services</a>
+              <a class="menu__link" href="#section">Services</a>
             </li>
             <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
             <li class="menu__item">
               <a class="menu__link" href="#">Projects</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Contact Me</a>
+              <a class="menu__link" href="https://www.google.com/">Contact Me</a>
             </li>
             <li class="menu__item menu__item__mobile-search" id="toggleSearch">
               <a href="#">
@@ -143,7 +143,7 @@
         </div>
       </div>
     </header>
-    <!-- <section class="section">
+    <section class="page__section section-white" id="section">
       <div class="section-description">
         <p class="section__pre-title">Lorem, ipsum dolor.</p>
         <h2 class="section__title">Lorem ipsum dolor sit.</h2>
@@ -152,53 +152,56 @@
           most customizable template on the market.
         </p>
       </div>
-      <div class="section-advantages" id="sectionAdantages">
-        <div>
-          <a href="#">
-            <img src="img/artistic-brush-black.png" alt="Unique & Clean" />
-            <h3>Lorem & ipsum.</h3>
-            <p>
+      <div class="section-advantages__container" id="sectionAdantages">
+        <div class="section-advantages__item">
+          <a class="section-advantages__link" href="#">
+            <img class="section-advantages__icon" src="img/artistic-brush-black.png" alt="Unique & Clean" />
+            <h3 class="section-advantages__title">Lorem & ipsum.</h3>
+            <p class="section-advantages__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               accusantium magnam quisquam veniam praesentium deserunt hic quia,
               exercitationem nihil totam.
             </p>
+            <div class="section-advantages__more-link"><a href="#">Read more</a></div>
           </a>
         </div>
-        <div>
-          <a href="#">
-            <img src="img/move-black.png" alt="Flexible Layouts" />
-            <h3>Lorem & ipsum.</h3>
-            <p>
+        <div class="section-advantages__item">
+          <a class="section-advantages__link" href="#">
+            <img class="section-advantages__icon" src="img/move-black.png" alt="Flexible Layouts" />
+            <h3 class="section-advantages__title">Lorem & ipsum.</h3>
+            <p class="section-advantages__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
               rem voluptatum? Necessitatibus aliquid in nesciunt, nam voluptas
               impedit!
             </p>
+            <div class="section-advantages__more-link"><a href="#">Read more</a></div>
           </a>
         </div>
-        <div>
-          <a href="#">
-            <img src="img/heart-black.png" alt="Trendy Design" />
-            <h3>Lorem & ipsum.</h3>
-            <p>
+        <div class="section-advantages__item">
+          <a class="section-advantages__link" href="#">
+            <img class="section-advantages__icon" src="img/heart-black.png" alt="Trendy Design" />
+            <h3 class="section-advantages__title">Lorem & ipsum.</h3>
+            <p class="section-advantages__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               aut autem consequatur quo quos delectus eum!
             </p>
+            <div class="section-advantages__more-link"><a href="#">Read more</a></div>
           </a>
         </div>
       </div>
     </section>
-    <section class="section-feature">
+    <section class="page__section section-feature">
       <div class="section-feature__container">
-        <div>
+        <div class="section-feature__container-left">
           <img src="img/feauture-img-main.png" alt="feature" />
         </div>
         <div>
           <div class="section-description">
-            <p>Lorem, ipsum dolor.</p>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
-              accusantium sint quibusdam illo autem distinctio!
+            <p class="section__pre-title">Lorem, ipsum dolor.</p>
+            <h2 class="section__title">Lorem ipsum dolor sit.</h2>
+            <p class="section__sub-title">
+              Webster's ultimate easy to use and customizable UI elements make it
+              most customizable template on the market.
             </p>
           </div>
           <div class="section-feature__items">
@@ -242,13 +245,13 @@
         </div>
       </div>
     </section>
-    <section class="section-portfolio">
+    <section class="page__section section-portfolio section-white">
       <div class="section-description">
-        <p>Lorem, ipsum dolor.</p>
-        <h2>Lorem ipsum dolor sit.</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
-          accusantium sint quibusdam illo autem distinctio!
+        <p class="section__pre-title">Lorem, ipsum dolor.</p>
+        <h2 class="section__title">Lorem ipsum dolor sit.</h2>
+        <p class="section__sub-title">
+          Webster's ultimate easy to use and customizable UI elements make it
+          most customizable template on the market.
         </p>
       </div>
       <div class="section-portfolio-grid">
@@ -264,14 +267,13 @@
         <button class="btn-more">See all Projects</button>
       </div>
     </section>
-    <section class="section-form section-white-color">
-      <div class="section-description">
+    <section class="page__section section-form section-white-color">
+      <div class="section-form__description">
         <h2>Contact me</h2>
       </div>
-      <form
+      <form class="section-form__container"
         method="POST"
-        action="https://formspree.io/romann.kravets@gmail.com"
-      >
+        action="https://formspree.io/romann.kravets@gmail.com">
         <div>
           <input type="text" placeholder="Your name" />
         </div>
@@ -290,7 +292,7 @@
         <input type="submit" value="Send message" />
       </form>
     </section>
-    <section class="section-contact-info">
+    <section class="page__section section-contact-info section-white">
       <div class="section-description">
         <h2>Lorem ipsum dolor sit.</h2>
       </div>
@@ -365,7 +367,7 @@
         <h3>Subscribe to me newsletter</h3>
         <button>Discover more</button>
       </div>
-    </footer> -->
+    </footer>
     <div class="scroll__top" title="To top">
       <img
         class="scroll__top-icon"
