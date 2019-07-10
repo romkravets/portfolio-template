@@ -619,47 +619,47 @@ input[type=checkbox]:checked ~ .burger > .spinner:nth-child(3) {
 
 .gallery-section__item:first-child {
     grid-column: 1;
-    background-image: url(/img/gallery/zeatrib.jpg);
+    background-image: url(../img/gallery/zeatrib.jpg);
 }
 
 .gallery-section__item:nth-child(2) {
     grid-column: 1;
-    background-image: url(/img/gallery/philosopth.jpg);
+    background-image: url(../img/gallery/philosopth.jpg);
 }
 
 .gallery-section__item:nth-child(3) {
     grid-column: 1;
-    background-image: url(/img/gallery/boote.jpg);
+    background-image: url(../img/gallery/boote.jpg);
 }
 
 .gallery-section__item:nth-child(4) {
     grid-column: 1;
-    background-image: url(/img/gallery/coast.jpg);
+    background-image: url(../img/gallery/coast.jpg);
 }
 
 .gallery-section__item:nth-child(5) {
     grid-column: 1;
-    background-image: url(/img/gallery/hostlinea.jpg);
+    background-image: url(../img/gallery/hostlinea.jpg);
 }
 
 .gallery-section__item:nth-child(6) {
     grid-column: 1;
-    background-image: url(/img/gallery/hunger.jpg);
+    background-image: url(../img/gallery/hunger.jpg);
 }
 
 .gallery-section__item:nth-child(7) {
     grid-column: 1;
-    background-image: url(/img/gallery/intens.webp);
+    background-image: url(../img/gallery/intens.webp);
 }
 
 .gallery-section__item:nth-child(8) {
     grid-column: 1;
-    background-image: url(/img/gallery/legacy.png);
+    background-image: url(../img/gallery/legacy.png);
 }
 
 .gallery-section__item:nth-child(9) {
     grid-column: 1;
-    background-image: url(/img/gallery/novi.webp);
+    background-image: url(../img/gallery/novi.webp);
 }
 
 .gallery-section__item:hover {
