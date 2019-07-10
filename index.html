@@ -1,196 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/index.css" type="text/css" />
-  </head>
-  <body class="page__body">
+</head>
+
+<body class="page__body">
     <header class="main-header">
-      <nav class="top-line">
-        <div class="top-line__contact">
-          <div class="top-line__email">
-            <a class="menu__link icon__img-hover" href="#">
-              <img
-                class="top-line__img"
-                src="img/massege.png"
-                alt="Email Roman Kravets"
-              />
-              romann.kravets@gmail.com</a
-            >
-          </div>
-          <div class="top-line__phone">
-            <a class="menu__link icon__img-hover" href="#"
-              ><img
-                class="top-line__img"
-                src="img/phone.png"
-                alt="Phone call Roman Kravets"
-              />
-              +38(069)-927-17-07</a
-            >
-          </div>
+        <nav class="top-line">
+            <div class="top-line__contact">
+                <div class="top-line__email">
+                    <a class="menu__link icon__img-hover" href="#">
+                        <img class="top-line__img" src="img/massege.png" alt="Email Roman Kravets" /> romann.kravets@gmail.com
+                    </a>
+                </div>
+                <div class="top-line__phone">
+                    <a class="menu__link icon__img-hover" href="#"><img class="top-line__img" src="img/phone.png" alt="Phone call Roman Kravets" /> +38(069)-927-17-07
+                    </a>
+                </div>
+            </div>
+            <ul class="top-line__soc-icon">
+                <li>
+                    <a class="icon__img-hover" href="#">
+                        <img src="img/social_icon/facebook-letter-logo.png" alt="Facebook" /></a>
+                </li>
+                <li>
+                    <a class="icon__img-hover" href="#">
+                        <img src="img/social_icon//linkedin.png" alt="Linkedin" /></a>
+                </li>
+                <li>
+                    <a class="icon__img-hover" href="#">
+                        <img src="img/social_icon/github.png" alt="Github" /></a>
+                </li>
+                <li>
+                    <a class="icon__img-hover" href="#">
+                        <img src="img/social_icon/codepen.png" alt="Codepen" /></a>
+                </li>
+                <li>
+                    <a class="icon__img-hover" href="#">
+                        <img src="img/social_icon/google-plus.png" alt="Google Plus" /></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="menu" id="navMenu">
+            <div class="menu__container">
+                <div class="logo">
+                    <a class="menu__link" href="#">
+                        <img src="img/logo.png" alt="Coder Roman Kravets" />
+                        <div class="logo-caption">Portfolio
+                            <br />Roman Kravets</div>
+                    </a>
+                </div>
+                <input type="checkbox" class="openMenu" id="openMenu" />
+                <label for="openMenu" class="burger">
+                    <span class="spinner"></span>
+                    <span class="spinner"></span>
+                    <span class="spinner"></span>
+                </label>
+                <ul class="menu__items">
+                    <li class="menu__item"><a class="menu__link" href="">Home</a></li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Services</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="">Blog</a></li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Projects</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Contact Me</a>
+                    </li>
+                    <li class="menu__item menu__item__mobile-search" id="toggleSearch">
+                        <a href="#">
+                            <img src="img/glass-search.png" alt="search in blog Roman Kravets developer" />
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item__mobile-element">
+                        <a href="#">
+                            <img src="img/massege.png" alt="Email Roman Kravets" />
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item__mobile-element">
+                        <a href="#">
+                            <img src="img/phone.png" alt="Phone call Roman Kravets" />
+                        </a>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <form method="POST" action="https://formspree.io/romann.kravets@gmail.com">
+                        <input type="text" name="q" id="search-terms" placeholder="Search terms..." />
+                        <button type="submit" name="submit" value="Go" class="search-icon">
+                            <i class="fa fa-fw fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="main-description-container section-white-color">
+            <h1 class="main-description-container__title">Roman Kravets</h1>
+            <p>Hey, I am Roman. Happy to see you there.</p>
+            <div class="btn-container">
+                <button class="btn btn-contact">Contact Me</button>
+                <button class="btn__view">View Projects</button>
+            </div>
+            <div class="btn__next">
+                <a href="#sectionAdantages">
+                    <img src="img/down-arrow.png" alt="show more in site web developer" />
+                </a>
+            </div>
         </div>
-        <ul class="top-line__soc-icon">
-          <li>
-            <a class="icon__img-hover" href="#">
-              <img src="img/social_icon/facebook-letter-logo.png" alt="Facebook"
-            /></a>
-          </li>
-          <li>
-            <a class="icon__img-hover" href="#">
-              <img src="img/social_icon//linkedin.png" alt="Linkedin"
-            /></a>
-          </li>
-          <li>
-            <a class="icon__img-hover" href="#">
-              <img src="img/social_icon/github.png" alt="Github"
-            /></a>
-          </li>
-          <li>
-            <a class="icon__img-hover" href="#">
-              <img src="img/social_icon/codepen.png" alt="Codepen"
-            /></a>
-          </li>
-          <li>
-            <a class="icon__img-hover" href="#">
-              <img src="img/social_icon/google-plus.png" alt="Google Plus"
-            /></a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="menu" id="navMenu">
-        <div class="menu__container">
-          <div class="logo">
-            <a class="menu__link" href="#">
-              <img src="img/logo.png" alt="Coder Roman Kravets" />
-              <div class="logo-caption">Portfolio<br />Roman Kravets</div>
-            </a>
-          </div>
-          <input type="checkbox" class="openMenu" id="openMenu" />
-          <label for="openMenu" class="burger">
-            <span class="spinner"></span>
-            <span class="spinner"></span>
-            <span class="spinner"></span>
-          </label>
-          <ul class="menu__items">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item">
-              <a class="menu__link" href="#section">Services</a>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Projects</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="https://www.google.com/">Contact Me</a>
-            </li>
-            <li class="menu__item menu__item__mobile-search" id="toggleSearch">
-              <a href="#">
-                <img
-                  src="img/glass-search.png"
-                  alt="search in blog Roman Kravets developer"
-                />
-              </a>
-            </li>
-            <li class="menu__item menu__item__mobile-element">
-              <a href="#">
-                <img src="img/massege.png" alt="Email Roman Kravets" />
-              </a>
-            </li>
-            <li class="menu__item menu__item__mobile-element">
-              <a href="#">
-                <img src="img/phone.png" alt="Phone call Roman Kravets" />
-              </a>
-            </li>
-          </ul>
-          <div class="search-container">
-            <form method="POST" action="https://formspree.io/romann.kravets@gmail.com">
-              <input
-                type="text"
-                name="q"
-                id="search-terms"
-                placeholder="Search terms..."
-              />
-              <button
-                type="submit"
-                name="submit"
-                value="Go"
-                class="search-icon"
-              >
-                <i class="fa fa-fw fa-search"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <div class="main-description-container section-white-color">
-        <h1 class="main-description-container__title">Roman Kravets</h1>
-        <p>Hey, I am Roman. Happy to see you there.</p>
-        <div class="btn-container">
-          <button class="btn btn-contact">Contact Me</button>
-          <button class="btn__view">View Projects</button>
-        </div>
-        <div class="btn__next">
-          <a href="#sectionAdantages">
-            <img
-              src="img/down-arrow.png"
-              alt="show more in site web developer"
-            />
-          </a>
-        </div>
-      </div>
     </header>
-    <section class="page__section section-white" id="section">
+    <section class="prodacts">
       <div class="section-description">
         <p class="section__pre-title">Lorem, ipsum dolor.</p>
         <h2 class="section__title">Lorem ipsum dolor sit.</h2>
         <p class="section__sub-title">
-          Webster's ultimate easy to use and customizable UI elements make it
-          most customizable template on the market.
+            Webster's ultimate easy to use and customizable UI elements make it most customizable template on the market.
         </p>
+    </div>
+      <div class="product-list">
+          <article class="product-card">
+              <a href="">
+                  <img src="/img/coder.png" alt="Cheshire Cat Backgrounds" />
+                  <div class="hover-container">
+                      <h3 class="product-card__caption">Templates</h3>
+                      <span class="btn__enjoy">More</span>
+                  </div>
+              </a>
+          </article>
+          <article class="product-card">
+              <a href="">
+                  <img src="/img/coder.png" alt="Cheshire Cat Toys" />
+                  <div class="hover-container hover-container_black">
+                      <h3 class="product-card__caption">Support</h3>
+                      <span class="btn__enjoy">More</span>
+                  </div>
+              </a>
+          </article>
+          <article class="product-card">
+              <a href="">
+                  <img src="/img/coder.png" alt="Cheshire Cat Video" />
+                  <div class="hover-container hover-container_blue">
+                      <h3 class="product-card__caption">Design</h3>
+                      <span class="btn__enjoy">More</span>
+                  </div>
+              </a>
+          </article>
       </div>
-      <div class="section-advantages__container" id="sectionAdantages">
-        <div class="section-advantages__item">
-          <a class="section-advantages__link" href="#">
-            <img class="section-advantages__icon" src="img/artistic-brush-black.png" alt="Unique & Clean" />
-            <h3 class="section-advantages__title">Lorem & ipsum.</h3>
-            <p class="section-advantages__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              accusantium magnam quisquam veniam praesentium deserunt hic quia,
-              exercitationem nihil totam.
-            </p>
-            <div class="section-advantages__more-link"><a href="#">Read more</a></div>
-          </a>
-        </div>
-        <div class="section-advantages__item">
-          <a class="section-advantages__link" href="#">
-            <img class="section-advantages__icon" src="img/move-black.png" alt="Flexible Layouts" />
-            <h3 class="section-advantages__title">Lorem & ipsum.</h3>
-            <p class="section-advantages__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-              rem voluptatum? Necessitatibus aliquid in nesciunt, nam voluptas
-              impedit!
-            </p>
-            <div class="section-advantages__more-link"><a href="#">Read more</a></div>
-          </a>
-        </div>
-        <div class="section-advantages__item">
-          <a class="section-advantages__link" href="#">
-            <img class="section-advantages__icon" src="img/heart-black.png" alt="Trendy Design" />
-            <h3 class="section-advantages__title">Lorem & ipsum.</h3>
-            <p class="section-advantages__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              aut autem consequatur quo quos delectus eum!
-            </p>
-            <div class="section-advantages__more-link"><a href="#">Read more</a></div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="page__section section-feature">
+  </section>
+    <!-- <section class="page__section section-feature">
       <div class="section-feature__container">
         <div class="section-feature__container-left">
           <img src="img/feauture-img-main.png" alt="feature" />
@@ -244,137 +206,155 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="page__section section-portfolio section-white">
-      <div class="section-description">
-        <p class="section__pre-title">Lorem, ipsum dolor.</p>
-        <h2 class="section__title">Lorem ipsum dolor sit.</h2>
-        <p class="section__sub-title">
-          Webster's ultimate easy to use and customizable UI elements make it
-          most customizable template on the market.
-        </p>
-      </div>
-      <div class="section-portfolio-grid">
-        <img src="img/feauture-img-main.png" alt="portfolio Roman Kravets" />
-        <img src="img/feauture-img-main.png" alt="portfolio Roman Kravets" />
-        <img src="img/feauture-img-main.png" alt="portfolio Roman Kravets" />
-        <img src="img/feauture-img-main.png" alt="portfolio Roman Kravets" />
-        <img src="img/feauture-img-main.png" alt="portfolio Roman Kravets" />
-        <img src="img/feauture-img-main.png" alt="portfolio Roman Kravets" />
-        <img src="img/feauture-img-main.png" alt="portfolio Roman Kravets" />
-      </div>
-      <div>
-        <button class="btn-more">See all Projects</button>
-      </div>
-    </section>
-    <section class="page__section section-form section-white-color">
-      <div class="section-form__description">
-        <h2>Contact me</h2>
-      </div>
-      <form class="section-form__container"
-        method="POST"
-        action="https://formspree.io/romann.kravets@gmail.com">
-        <div>
-          <input type="text" placeholder="Your name" />
+        <div class="section-description">
+            <p class="section__pre-title">Lorem, ipsum dolor.</p>
+            <h2 class="section__title">Lorem ipsum dolor sit.</h2>
+            <p class="section__sub-title">
+                Webster's ultimate easy to use and customizable UI elements make it most customizable template on the market.
+            </p>
         </div>
-        <div>
-          <input type="text" placeholder="Your email" />
-        </div>
-        <div>
-          <textarea
-            name="note"
-            id="textnote"
-            cols="30"
-            rows="10"
-            placeholder="Your text"
-          ></textarea>
-        </div>
-        <input type="submit" value="Send message" />
-      </form>
-    </section>
-    <section class="page__section section-contact-info section-white">
-      <div class="section-description">
-        <h2>Lorem ipsum dolor sit.</h2>
-      </div>
-      <div class="section-contact-info__container">
-        <div class="section-contact-info__item">
-          <a href="#">
-            <img src="img/message-black.png" alt="Roman Kravets webster" />
-            <div>
-              <p>romann.kravets@gmail.com</p>
-              <p>24 X 7 online support</p>
+        <div class="gallery-section">
+            <div class="gallery-section__item">
+                <span class="gallery-section__text">Project</span>
             </div>
-          </a>
-        </div>
-        <div class="section-contact-info__item">
-          <a href="#">
-            <img src="img/phone-black.png" alt="Roman Kravets webster" />
-            <div>
-              <p>+38(096) 927-17-07</p>
-              <p>8:30am-6:30pm</p>
+            <div class="gallery-section__item">
+                <span class="gallery-section__text">Project</span>
             </div>
-          </a>
-        </div>
-        <div class="section-contact-info__item">
-          <a href="#">
-            <img src="img/location-black.png" alt="Roman Kravets webster" />
-            <div>
-              <p>Ternopil region</p>
-              <p>Kremenets</p>
+            <div class="gallery-section__item">
+                <span class="gallery-section__text">Project</span>
             </div>
-          </a>
+            <div class="gallery-section__item">
+                <span class="gallery-section__text">Project</span>
+            </div>
+            <div class="gallery-section__item">
+                <span class="gallery-section__text">Project</span>
+            </div>
+            <div class="gallery-section__item">
+                <span class="gallery-section__text">Project</span>
+            </div>
+            <div class="gallery-section__item">
+                <span class="gallery-section__text">Project</span>
+            </div>
+            <div class="gallery-section__item">
+                <span class="gallery-section__text">Project</span>
+            </div>
+            <div class="gallery-section__item">
+                <span class="gallery-section__text">Project</span>
+            </div>
+            <div class="gallery-section__btn-container">
+                <button class="btn gallery-section__btn">See all Projects</button>
+            </div>
         </div>
-      </div>
     </section>
+    <section class=" section-form section-white-color">
+        <div class="section-form__description">
+            <h2 class="contact__title">Contact Us</h2>
+        </div>
+        <form class="section-form__container contact-elements" method="POST" action="https://formspree.io/romann.kravets@gmail.com">
+            <div class="contact-elements__group">
+                <input class="contact-elements__control" type="text" placeholder="Your name" />
+            </div>
+            <div class="contact-elements__group">
+                <input class="contact-elements__control" type="text" placeholder="Your email" />
+            </div>
+            <div>
+                <textarea class="contact-elements__control contact-elements__control_textarea" rows="3" placeholder="Your text"></textarea>
+            </div>
+            <button type="submit" class="btn">Send message</button>
+        </form>
+    </section>
+    <!-- <section class="page__section section-contact-info section-white">
+        <div class="section-description">
+            <h2>Lorem ipsum dolor sit.</h2>
+        </div>
+        <div class="section-contact-info__container">
+            <div class="section-contact-info__item">
+                <a href="#">
+                    <img src="img/message-black.png" alt="Roman Kravets webster" />
+                    <div>
+                        <p>romann.kravets@gmail.com</p>
+                        <p>24 X 7 online support</p>
+                    </div>
+                </a>
+            </div>
+            <div class="section-contact-info__item">
+                <a href="#">
+                    <img src="img/phone-black.png" alt="Roman Kravets webster" />
+                    <div>
+                        <p>+38(096) 927-17-07</p>
+                        <p>8:30am-6:30pm</p>
+                    </div>
+                </a>
+            </div>
+            <div class="section-contact-info__item">
+                <a href="#">
+                    <img src="img/location-black.png" alt="Roman Kravets webster" />
+                    <div>
+                        <p>Ternopil region</p>
+                        <p>Kremenets</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section> -->
     <footer class="footer section-white-color">
-      <div>
-        <h3>Navigation</h3>
-        <ul class="footer-menu__items">
-          <li class="footer-menu__item"><a href="#">Home</a></li>
-          <li class="footer-menu__item"><a href="#">Services</a></li>
-          <li class="footer-menu__item"><a href="#">Blog</a></li>
-          <li class="footer-menu__item"><a href="#">Projects</a></li>
-          <li class="footer-menu__item"><a href="#">Contact Me</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Useful link</h3>
-        <ul class="footer-menu__items">
-          <li class="footer-menu__item"><a href="#">Home</a></li>
-          <li class="footer-menu__item"><a href="#">Services</a></li>
-          <li class="footer-menu__item"><a href="#">Blog</a></li>
-          <li class="footer-menu__item"><a href="#">Projects</a></li>
-          <li class="footer-menu__item"><a href="#">Contact Me</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul class="footer-soc__items">
-          <li>
-            <img
-              src="img/social_icon/facebook-letter-logo.png"
-              alt="Roman Kravets"
-            />
-          </li>
-          <li>
-            <img src="img/social_icon/linkedin.png" alt="Roman Kravets" />
-          </li>
-          <li><img src="img/social_icon/github.png" alt="Roman Kravets" /></li>
-          <li>
-            <img src="img/social_icon/google-plus.png" alt="Roman Kravets" />
-          </li>
-          <li><img src="img/social_icon/codepen.png" alt="Roman Kravets" /></li>
-        </ul>
-        <h3>Subscribe to me newsletter</h3>
-        <button>Discover more</button>
-      </div>
+        <div>
+            <h3>Navigation</h3>
+            <ul class="footer-menu__items">
+                <li class="footer-menu__item"><a href="#">Home</a></li>
+                <li class="footer-menu__item"><a href="#">Services</a></li>
+                <li class="footer-menu__item"><a href="#">Blog</a></li>
+                <li class="footer-menu__item"><a href="#">Projects</a></li>
+                <li class="footer-menu__item"><a href="#">Contact Me</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Useful link</h3>
+            <ul class="footer-menu__items">
+                <li class="footer-menu__item"><a href="#">Home</a></li>
+                <li class="footer-menu__item"><a href="#">Services</a></li>
+                <li class="footer-menu__item"><a href="#">Blog</a></li>
+                <li class="footer-menu__item"><a href="#">Projects</a></li>
+                <li class="footer-menu__item"><a href="#">Contact Me</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="footer-soc__items">
+                <li  class="footer-soc__item">
+                  <a href="">
+                    <img src="img/social_icon/facebook-letter-logo.png" alt="Roman Kravets" />
+                  </a>
+                </li>
+                <li class="footer-soc__item">
+                    <a href="">
+                    <img src="img/social_icon/linkedin.png" alt="Roman Kravets" />
+                </li>
+                <li class="footer-soc__item">
+                    <a href="">
+                      <img src="img/social_icon/github.png" alt="Roman Kravets" />
+                  </a>
+                </li>
+                <li class="footer-soc__item">
+                    <a href="">
+                      <img src="img/social_icon/google-plus.png" alt="Roman Kravets" />
+                  </a>
+                </li>
+                <li class="footer-soc__item">
+                    <a href="">
+                      <img src="img/social_icon/codepen.png" alt="Roman Kravets" />
+                    </a>
+                </li>
+            </ul>
+            <h3>Subscribe to me newsletter</h3>
+            <button class="btn__view">Discover more</button>
+        </div>
     </footer>
     <div class="scroll__top" title="To top">
-      <img
-        class="scroll__top-icon"
-        src="img/up-arrow.png"
-        alt="to top site Roman Kravets"
-      />
+        <img class="scroll__top-icon" src="img/up-arrow.png" alt="to top site Roman Kravets" />
     </div>
     <script src="js/index.js"></script>
-  </body>
+</body>
+
 </html>
