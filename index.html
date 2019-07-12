@@ -12,6 +12,15 @@
 
 <body class="page__body">
     <header class="main-header">
+            <div class="search-container">
+                    <form class="search__form">
+                        <input type="text" name="q" class="search__input contact-elements__control" placeholder="Search terms..." />
+                        <button type="submit" name="submit" class="search__btn">
+                            Go
+                        </button>
+                    </form>
+                    <button class="search__close">X</button>
+                </div>
         <nav class="top-line">
             <div class="top-line__contact">
                 <div class="top-line__email">
@@ -74,7 +83,7 @@
                     <li class="menu__item">
                         <a class="menu__link" href="">Contact Me</a>
                     </li>
-                    <li class="menu__item menu__item__mobile-search" id="toggleSearch">
+                    <li class="menu__item menu__item__mobile-search toggleSearch">
                         <a href="#">
                             <img src="img/glass-search.png" alt="search in blog Roman Kravets developer" />
                         </a>
@@ -90,14 +99,6 @@
                         </a>
                     </li>
                 </ul>
-                <div class="search-container">
-                    <form method="POST" action="https://formspree.io/romann.kravets@gmail.com">
-                        <input type="text" name="q" id="search-terms" placeholder="Search terms..." />
-                        <button type="submit" name="submit" value="Go" class="search-icon">
-                            <i class="fa fa-fw fa-search"></i>
-                        </button>
-                    </form>
-                </div>
             </div>
         </nav>
         <div class="main-description-container section-white-color">
@@ -114,7 +115,7 @@
             </div>
         </div>
     </header>
-    <section class="prodacts">
+    <section class="page__section prodacts">
       <div class="section-description">
         <p class="section__pre-title">Lorem, ipsum dolor.</p>
         <h2 class="section__title">Lorem ipsum dolor sit.</h2>
@@ -122,92 +123,30 @@
             Webster's ultimate easy to use and customizable UI elements make it most customizable template on the market.
         </p>
     </div>
-      <div class="product-list">
-          <article class="product-card">
-              <a href="">
-                  <img src="img/coder.png" alt="templates" />
-                  <div class="hover-container">
-                      <h3 class="product-card__caption">Templates</h3>
-                      <span class="btn__enjoy">More</span>
-                  </div>
-              </a>
-          </article>
-          <article class="product-card">
-              <a href="">
-                  <img src="img/coder.png" alt="Support" />
-                  <div class="hover-container hover-container_black">
-                      <h3 class="product-card__caption">Support</h3>
-                      <span class="btn__enjoy">More</span>
-                  </div>
-              </a>
-          </article>
-          <article class="product-card">
-              <a href="">
-                  <img src="img/coder.png" alt="Design" />
-                  <div class="hover-container hover-container_blue">
-                      <h3 class="product-card__caption">Design</h3>
-                      <span class="btn__enjoy">More</span>
-                  </div>
-              </a>
-          </article>
-      </div>
+    <div class="products">
+            <div class="products__item" onclick="window.location='#'">
+                <img src="https://img.icons8.com/wired/64/000000/template.png">
+              <h2>Template</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="products__item" onclick="window.location='#'">
+                    <img src="https://img.icons8.com/wired/64/000000/online-support.png">
+              <h2>Support</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="products__item" onclick="window.location='#'">
+                    <img src="https://img.icons8.com/wired/64/000000/code.png">
+              <h2>Coding</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="products__item" onclick="window.location='#'">
+                    <img src="https://img.icons8.com/dotty/80/000000/edit-image.png">
+              <h2>Design</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aliquid tempora at explicabo culpa</p>
+            </div>
+          </div>
   </section>
-    <!-- <section class="page__section section-feature">
-      <div class="section-feature__container">
-        <div class="section-feature__container-left">
-          <img src="img/feauture-img-main.png" alt="feature" />
-        </div>
-        <div>
-          <div class="section-description">
-            <p class="section__pre-title">Lorem, ipsum dolor.</p>
-            <h2 class="section__title">Lorem ipsum dolor sit.</h2>
-            <p class="section__sub-title">
-              Webster's ultimate easy to use and customizable UI elements make it
-              most customizable template on the market.
-            </p>
-          </div>
-          <div class="section-feature__items">
-            <div>
-              <img src="img/phone.png" alt="feature" />
-              <h3>Lorem, ipsum dolor.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsa
-                repellat ipsum?
-              </p>
-              <a href="#">Read more</a>
-            </div>
-            <div>
-              <img src="img/phone.png" alt="feature" />
-              <h3>Lorem, ipsum dolor.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsa
-                repellat ipsum?
-              </p>
-              <a href="#">Read more</a>
-            </div>
-            <div>
-              <img src="img/phone.png" alt="feature" />
-              <h3>Lorem, ipsum dolor.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsa
-                repellat ipsum?
-              </p>
-              <a href="#">Read more</a>
-            </div>
-            <div>
-              <img src="img/phone.png" alt="feature" />
-              <h3>Lorem, ipsum dolor.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsa
-                repellat ipsum?
-              </p>
-              <a href="#">Read more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <section class="page__section section-portfolio section-white">
+    <section class="page__section section-portfolio">
         <div class="section-description">
             <p class="section__pre-title">Lorem, ipsum dolor.</p>
             <h2 class="section__title">Lorem ipsum dolor sit.</h2>
@@ -217,31 +156,31 @@
         </div>
         <div class="gallery-section">
             <div class="gallery-section__item">
-                <span class="gallery-section__text">Project</span>
+                <span class="gallery-section__text">Afelor</span>
             </div>
             <div class="gallery-section__item">
-                <span class="gallery-section__text">Project</span>
+                <span class="gallery-section__text">Philosophy</span>
             </div>
             <div class="gallery-section__item">
-                <span class="gallery-section__text">Project</span>
+                <span class="gallery-section__text">Shoes</span>
             </div>
             <div class="gallery-section__item">
-                <span class="gallery-section__text">Project</span>
+                <span class="gallery-section__text">Help</span>
             </div>
             <div class="gallery-section__item">
-                <span class="gallery-section__text">Project</span>
+                <span class="gallery-section__text">Web Hosting</span>
             </div>
             <div class="gallery-section__item">
-                <span class="gallery-section__text">Project</span>
+                <span class="gallery-section__text">End Hunger</span>
             </div>
             <div class="gallery-section__item">
-                <span class="gallery-section__text">Project</span>
+                <span class="gallery-section__text">Niche</span>
             </div>
             <div class="gallery-section__item">
-                <span class="gallery-section__text">Project</span>
+                <span class="gallery-section__text">Life Change</span>
             </div>
             <div class="gallery-section__item">
-                <span class="gallery-section__text">Project</span>
+                <span class="gallery-section__text">Template</span>
             </div>
             <div class="gallery-section__btn-container">
                 <button class="btn gallery-section__btn">See all Projects</button>
@@ -299,58 +238,80 @@
             </div>
         </div>
     </section> -->
-    <!-- <footer class="footer section-white-color">
+    <div class="footer__wrapper">
+    <footer class="footer-container section-white-color">
         <div>
             <h3>Navigation</h3>
             <ul class="footer-menu__items">
-                <li class="footer-menu__item"><a href="#">Home</a></li>
-                <li class="footer-menu__item"><a href="#">Services</a></li>
-                <li class="footer-menu__item"><a href="#">Blog</a></li>
-                <li class="footer-menu__item"><a href="#">Projects</a></li>
-                <li class="footer-menu__item"><a href="#">Contact Me</a></li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#">Home</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#">Services</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#">Blog</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#">Projects</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#">Contact Me</a>
+                </li>
             </ul>
         </div>
         <div>
             <h3>Useful link</h3>
             <ul class="footer-menu__items">
-                <li class="footer-menu__item"><a href="#">Home</a></li>
-                <li class="footer-menu__item"><a href="#">Services</a></li>
-                <li class="footer-menu__item"><a href="#">Blog</a></li>
-                <li class="footer-menu__item"><a href="#">Projects</a></li>
-                <li class="footer-menu__item"><a href="#">Contact Me</a></li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#">Culture</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#">Philosophy</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#">Portfolio</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#">Management</a>
+                </li>
             </ul>
         </div>
-        <div>
+        <div class="footer-soc__container">
             <ul class="footer-soc__items">
                 <li  class="footer-soc__item">
                   <a href="">
-                    <img src="img/social_icon/facebook-letter-logo.png" alt="Roman Kravets" />
+                    <img  class="footer-soc__img" src="img/social_icon/facebook-letter-logo.png" alt="Roman Kravets" />
                   </a>
                 </li>
                 <li class="footer-soc__item">
                     <a href="">
-                    <img src="img/social_icon/linkedin.png" alt="Roman Kravets" />
+                    <img class="footer-soc__img" src="img/social_icon/linkedin.png" alt="Roman Kravets" />
                 </li>
                 <li class="footer-soc__item">
                     <a href="">
-                      <img src="img/social_icon/github.png" alt="Roman Kravets" />
+                      <img  class="footer-soc__img" src="img/social_icon/github.png" alt="Roman Kravets" />
                   </a>
                 </li>
                 <li class="footer-soc__item">
                     <a href="">
-                      <img src="img/social_icon/google-plus.png" alt="Roman Kravets" />
+                      <img  class="footer-soc__img" src="img/social_icon/google-plus.png" alt="Roman Kravets" />
                   </a>
                 </li>
                 <li class="footer-soc__item">
                     <a href="">
-                      <img src="img/social_icon/codepen.png" alt="Roman Kravets" />
+                      <img  class="footer-soc__img" src="img/social_icon/codepen.png" alt="Roman Kravets" />
                     </a>
                 </li>
             </ul>
             <h3>Subscribe to me newsletter</h3>
             <button class="btn__view">Discover more</button>
         </div>
-    </footer> -->
+    </footer>
+        <div class="footer__copyright">
+            <span>&copy; 2019 <a class="footer__copyright__link" href="https://github.com/romkravets">Roman Kravets</a></span>
+        </div>
+    </div>
     <div class="scroll__top" title="To top">
         <img class="scroll__top-icon" src="img/up-arrow.png" alt="to top site Roman Kravets" />
     </div>
