@@ -14,7 +14,7 @@
     <header class="main-header">
             <div class="search-container">
                     <form class="search__form">
-                        <input type="text" name="q" class="search__input contact-elements__control" placeholder="Search terms..." />
+                        <input type="text" class="search__input contact-elements__control" placeholder="Search terms..." />
                         <button type="submit" name="submit" class="search__btn">
                             Go
                         </button>
@@ -24,26 +24,26 @@
         <nav class="top-line">
             <div class="top-line__contact">
                 <div class="top-line__email">
-                    <a class="menu__link icon__img-hover" href="#">
+                    <a class="menu__link icon__img-hover" href="mailto:romann.kravets@gmail.com">
                         <img class="top-line__img" src="img/massege.png" alt="Email Roman Kravets" /> romann.kravets@gmail.com
                     </a>
                 </div>
                 <div class="top-line__phone">
-                    <a class="menu__link icon__img-hover" href="#"><img class="top-line__img" src="img/phone.png" alt="Phone call Roman Kravets" /> +38(069)-927-17-07
+                    <a class="menu__link icon__img-hover" href="tel:+38(069)-927-17-07"><img class="top-line__img" src="img/phone.png" alt="Phone call Roman Kravets" /> +38(069)-927-17-07
                     </a>
                 </div>
             </div>
             <ul class="top-line__soc-icon">
                 <li>
-                    <a class="icon__img-hover" href="#">
+                    <a class="icon__img-hover" href="https://www.facebook.com/romann.kravets">
                         <img src="img/social_icon/facebook-letter-logo.png" alt="Facebook" /></a>
                 </li>
                 <li>
-                    <a class="icon__img-hover" href="#">
+                    <a class="icon__img-hover" href="www.linkedin.com/in/romkravets">
                         <img src="img/social_icon//linkedin.png" alt="Linkedin" /></a>
                 </li>
                 <li>
-                    <a class="icon__img-hover" href="#">
+                    <a class="icon__img-hover" href="https://github.com/romkravets">
                         <img src="img/social_icon/github.png" alt="Github" /></a>
                 </li>
                 <li>
@@ -59,7 +59,7 @@
         <nav class="menu" id="navMenu">
             <div class="menu__container">
                 <div class="logo">
-                    <a class="menu__link" href="#">
+                    <a class="menu__link" href="https://github.com/romkravets">
                         <img src="img/logo.png" alt="Coder Roman Kravets" />
                         <div class="logo-caption">Portfolio
                             <br />Roman Kravets</div>
@@ -74,14 +74,14 @@
                 <ul class="menu__items">
                     <li class="menu__item"><a class="menu__link" href="">Home</a></li>
                     <li class="menu__item">
-                        <a class="menu__link" href="">Services</a>
+                        <a class="menu__link" href="#services">Services</a>
                     </li>
                     <li class="menu__item"><a class="menu__link" href="">Blog</a></li>
                     <li class="menu__item">
-                        <a class="menu__link" href="">Projects</a>
+                        <a class="menu__link" href="#projects">Projects</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="">Contact Me</a>
+                        <a class="menu__link" href="#contsct-me">Contact Me</a>
                     </li>
                     <li class="menu__item menu__item__mobile-search toggleSearch">
                         <a href="#">
@@ -89,12 +89,12 @@
                         </a>
                     </li>
                     <li class="menu__item menu__item__mobile-element">
-                        <a href="#">
+                        <a href="mailto:romann.kravets@gmail.com">
                             <img src="img/massege.png" alt="Email Roman Kravets" />
                         </a>
                     </li>
                     <li class="menu__item menu__item__mobile-element">
-                        <a href="#">
+                        <a href="tel:+38(069)-927-17-07">
                             <img src="img/phone.png" alt="Phone call Roman Kravets" />
                         </a>
                     </li>
@@ -105,17 +105,17 @@
             <h1 class="main-description-container__title">Roman Kravets</h1>
             <p>Hey, I am Roman. Happy to see you there.</p>
             <div class="btn-container">
-                <button class="btn btn-contact">Contact Me</button>
-                <button class="btn__view">View Projects</button>
+                <a href="#contsct-me" class="btn btn-contact">Contact Me</a>
+                <a href="#projects" class="btn__view">View Projects</a>
             </div>
             <div class="btn__next">
-                <a href="#sectionAdantages">
+                <a href="#services">
                     <img src="img/down-arrow.png" alt="show more in site web developer" />
                 </a>
             </div>
         </div>
     </header>
-    <section class="page__section prodacts">
+    <section class="prodacts" id="services">
       <div class="section-description">
         <p class="section__pre-title">Lorem, ipsum dolor.</p>
         <h2 class="section__title">Lorem ipsum dolor sit.</h2>
@@ -124,29 +124,29 @@
         </p>
     </div>
     <div class="products">
-            <div class="products__item" onclick="window.location='#'">
-                <img src="https://img.icons8.com/wired/64/000000/template.png">
+            <div class="products__item">
+                <img src="https://img.icons8.com/wired/64/000000/template.png" alt="Template">
               <h2>Template</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
-            <div class="products__item" onclick="window.location='#'">
-                    <img src="https://img.icons8.com/wired/64/000000/online-support.png">
+            <div class="products__item">
+                    <img src="https://img.icons8.com/wired/64/000000/online-support.png" alt="Support">
               <h2>Support</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
-            <div class="products__item" onclick="window.location='#'">
-                    <img src="https://img.icons8.com/wired/64/000000/code.png">
+            <div class="products__item">
+                    <img src="https://img.icons8.com/wired/64/000000/code.png" alt="Coding">
               <h2>Coding</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
-            <div class="products__item" onclick="window.location='#'">
-                    <img src="https://img.icons8.com/dotty/80/000000/edit-image.png">
+            <div class="products__item">
+                    <img src="https://img.icons8.com/dotty/80/000000/edit-image.png" alt="Design">
               <h2>Design</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aliquid tempora at explicabo culpa</p>
             </div>
           </div>
   </section>
-    <section class="page__section section-portfolio">
+    <section class="section-portfolio" id="projects">
         <div class="section-description">
             <p class="section__pre-title">Lorem, ipsum dolor.</p>
             <h2 class="section__title">Lorem ipsum dolor sit.</h2>
@@ -187,7 +187,7 @@
             </div>
         </div>
     </section>
-    <section class=" section-form section-white-color">
+    <section class=" section-form section-white-color" id="contsct-me">
         <div class="section-form__description">
             <h2 class="contact__title">Contact Me</h2>
         </div>
@@ -241,7 +241,7 @@
     <div class="footer__wrapper">
     <footer class="footer-container section-white-color">
         <div>
-            <h3>Navigation</h3>
+            <h3 class="footer__caption">Navigation</h3>
             <ul class="footer-menu__items">
                 <li class="footer-menu__item">
                     <a class="footer-menu__link" href="#">Home</a>
@@ -261,7 +261,7 @@
             </ul>
         </div>
         <div>
-            <h3>Useful link</h3>
+            <h3 class="footer__caption">Useful link</h3>
             <ul class="footer-menu__items">
                 <li class="footer-menu__item">
                     <a class="footer-menu__link" href="#">Culture</a>
@@ -280,26 +280,27 @@
         <div class="footer-soc__container">
             <ul class="footer-soc__items">
                 <li  class="footer-soc__item">
-                  <a href="">
+                  <a href="https://www.facebook.com/romann.kravets">
                     <img  class="footer-soc__img" src="img/social_icon/facebook-letter-logo.png" alt="Roman Kravets" />
                   </a>
                 </li>
                 <li class="footer-soc__item">
-                    <a href="">
+                    <a href="www.linkedin.com/in/romkravets">
                     <img class="footer-soc__img" src="img/social_icon/linkedin.png" alt="Roman Kravets" />
+                </a>
                 </li>
                 <li class="footer-soc__item">
-                    <a href="">
+                    <a href="https://github.com/romkravets">
                       <img  class="footer-soc__img" src="img/social_icon/github.png" alt="Roman Kravets" />
                   </a>
                 </li>
                 <li class="footer-soc__item">
-                    <a href="">
+                    <a href="#">
                       <img  class="footer-soc__img" src="img/social_icon/google-plus.png" alt="Roman Kravets" />
                   </a>
                 </li>
                 <li class="footer-soc__item">
-                    <a href="">
+                    <a href="#">
                       <img  class="footer-soc__img" src="img/social_icon/codepen.png" alt="Roman Kravets" />
                     </a>
                 </li>
