@@ -1,6 +1,9 @@
 const scrollBtn = document.querySelector('.scroll__top');
 const burger = document.querySelector('.burger');
 const navItems = document.querySelector('.menu__items');
+const modalGallery = document.querySelector('.galleryModal');
+const galleryBtns = document.querySelectorAll('.gallery-section__item');
+const closeModalGallery = document.querySelector('.close-modal');
 
 
 window.addEventListener('scroll', () => {
@@ -43,6 +46,23 @@ const searchClosed = () => {
       searchBox.classList.remove('search-container_opened');
    })
 }
+
+galleryBtns.forEach( (galleryBtn) => {
+   galleryBtn.addEventListener('click', () => {
+      modalGallery.classList.toggle('modal_opened');
+
+   })
+})
+
+closeModalGallery.addEventListener('click', () => {
+   modalGallery.classList.remove('modal_opened');
+});
+
+window.addEventListener('click', (e) => {
+   if (e.target === modalGallery) {
+      modalGallery.classList.remove('modal_opened');
+    }
+ })
 
 burgerFunction();
 topFunction();
