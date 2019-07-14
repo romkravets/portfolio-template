@@ -405,14 +405,14 @@ input[type=checkbox]:checked ~ .burger > .spinner:nth-child(3) {
     color: var( --white-color);
     font-size: 18px;
     line-height: 2.5;
-    padding: 0 1em;
+    padding: 0.2rem 1rem;
     font-weight: 400;
     letter-spacing: 1px;
     transition: all 150ms;
     min-width: 144px;
-    display: block;
     margin: 1em auto;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .btn:hover {
@@ -431,8 +431,8 @@ input[type=checkbox]:checked ~ .burger > .spinner:nth-child(3) {
     min-width: 144px;
     padding: 0.8rem 1rem;
     font-weight: 400;
+    box-sizing: border-box;
     margin: 1em auto;
-    display: block;
     text-decoration: none;
 }
 
@@ -441,6 +441,19 @@ input[type=checkbox]:checked ~ .burger > .spinner:nth-child(3) {
     color: var(--black-color);
     box-shadow: 0 8px 20px -14px #e80505;
     transition: all 150ms;
+    text-decoration: none;
+}
+
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 760px) {
+    .btn-container {
+        flex-direction: row;
+    }
 }
 
 .btn__next {
@@ -458,8 +471,8 @@ input[type=checkbox]:checked ~ .burger > .spinner:nth-child(3) {
 .scroll__top_active {
     display: block;
     position: fixed;
-    bottom: 20px;
-    right: 200px;
+    bottom: 50px;
+    left: 60%;
     z-index: 2;
     background-color: rgb(17, 40, 64);
     color: var( --white-color);
@@ -869,8 +882,13 @@ input[type=checkbox]:checked ~ .burger > .spinner:nth-child(3) {
     grid-column: 1 / 5;
 }
 
+.gallery-section__btn {
+    display: block;
+}
+
 .gallery-section__item__btn {
     min-width: 250px;
+    display: block;
 }
 
 @media (min-width: 750px) {
@@ -1148,4 +1166,7 @@ input, textarea {
     color: var(--black-color);
     text-decoration: none;
     cursor: pointer;
+  }
+  .page__wrapper {
+      position: relative;
   }

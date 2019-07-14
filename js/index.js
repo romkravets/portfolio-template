@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
  });
 
  const scrollFunction = () => {
-   if(this.scrollY <= 1000) scrollBtn.className = ' '; else scrollBtn.className = 'scroll__top_active';
+   if(this.scrollY <= 2000) scrollBtn.className = ' '; else scrollBtn.className = 'scroll__top_active';
 }
 
 const topFunction = () => {
